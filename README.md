@@ -31,18 +31,20 @@ Projeto acadêmico de banco de dados relacional para uma clínica veterinária, 
 * Exame(id_exame, nome, tipo_exame)
 * Medicamento_Aplicado(id_medicamento, id_veterinario, id_consulta, dosagem, data_aplicacao)
 * Exame_Realizado(id_exame, id_veterinario, id_consulta, data_realizacao)
+
 As tabelas Medicamento_Aplicado e Exame_Realizado resolvem os relacionamentos N:N entre consultas, medicamentos e exames.
 
 ## Como usar
-1 - Abra o VS Code e a pasta do projeto.
-2 - Certifique-se de que os arquivos .sql estão na raiz (ou em uma pasta sql/ que você preferir).
-3 - Crie ou aponte um banco SQLite, por exemplo: clinica_veterinaria.db.
-4 - Execute os scripts na seguinte ordem:
+
+1. Abra o VS Code e a pasta do projeto.
+2. Certifique-se de que os arquivos .sql estão na raiz (ou em uma pasta sql/ que você preferir).
+3. Crie ou aponte um banco SQLite, por exemplo: clinica_veterinaria.db.
+4. **Execute os scripts na seguinte ordem:**
     * 01_create_tables.sql
     * 02_insert_data.sql
     * 03_select_queries.sql (para testar consultas)
     * 04_updates_deletes.sql (para testar alterações e exclusões)
 
 Você pode executar os scripts:
-    * Pelo SQLiteStudio, abrindo cada arquivo .sql e rodando.
-    * Pela extensão de SQLite no VS Code, conectando no arquivo .db e executando os scripts.
+* Pelo SQLiteStudio, abrindo cada arquivo .sql e rodando.
+* Pela extensão de SQLite no VS Code, conectando no arquivo .db e executando os scripts.

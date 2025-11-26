@@ -1,10 +1,11 @@
 -- 1. Criação das Tabelas
 
+
 CREATE TABLE Tutor (
     id_tutor INTEGER PRIMARY KEY AUTOINCREMENT,
     nome TEXT NOT NULL,
     telefone TEXT,
-    email TEXT
+    email TEXT UNIQUE 
 );
 
 CREATE TABLE Pet (
@@ -19,7 +20,7 @@ CREATE TABLE Pet (
 CREATE TABLE Veterinario (
     id_veterinario INTEGER PRIMARY KEY AUTOINCREMENT,
     nome TEXT NOT NULL,
-    crmv TEXT
+    crmv TEXT UNIQUE 
 );
 
 CREATE TABLE Consulta (
